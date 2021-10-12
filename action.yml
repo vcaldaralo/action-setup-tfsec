@@ -1,0 +1,10 @@
+name: 'Terraform docs setup'
+description: GitHub Action for setup tfsec at specified version'
+inputs:
+  tfsec_version:  # id of input
+    description: 'tfsec version to install'
+    required: false
+    default: 'v0.58.14'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
