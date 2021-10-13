@@ -11,7 +11,7 @@ print_title(){
 
 get_tfsec() {
     cd /tmp
-    curl -Lo ./tfsec "https://github.com/tfsec/tfsec/releases/download/${TFSEC_VERSION}/tfsec-${TFSEC_VERSION}-linux-amd64.tar.gz"
+    curl -Lo ./tfsec "https://github.com/aquasecurity/tfsec/releases/download/${TFSEC_VERSION}/tfsec-linux-amd64"
     chmod +x tfsec
     mv -f tfsec /usr/local/bin/tfsec
     tfsec -v
