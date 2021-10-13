@@ -4,8 +4,5 @@ runs:
   using: "composite"
   steps:
     - uses: actions/setup-python@v2
-    - run: |
-        ls -l ${{ github.action_path }}/main.sh
-        chmod +x ${{ github.action_path }}/main.sh
-        sudo ${{ github.action_path }}/main.sh
+    - run: ${{ github.action_path }}/main.sh
       shell: bash
